@@ -1,3 +1,5 @@
+#Hotai-chan
+
 import osc_receive, event
 import tello_command as t
 receiver = osc_receive.OscReceive(20001)
@@ -10,13 +12,13 @@ def foo(vals):
 # start from tello3.py
 
 
-# Tello Python3 Control Demo 
+# Tello Python3 Control Demo
 #
 # http://www.ryzerobotics.com/
 #
 # 1/1/2018
 
-import threading 
+import threading
 import socket
 import sys
 import time
@@ -24,7 +26,7 @@ import time
 
 host = ''
 port = 9000
-locaddr = (host,port) 
+locaddr = (host,port)
 
 
 # Create a UDP socket
@@ -36,7 +38,7 @@ sock.bind(locaddr)
 
 def recv():
     count = 0
-    while True: 
+    while True:
         try:
             data, server = sock.recvfrom(1518)
             print(data.decode(encoding="utf-8"))
